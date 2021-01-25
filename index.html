@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+    <title>Document</title>
+</head> 
+<body>
+  <header class="section1">
+
+    <div class="navbar-brand d-flex" href="#" >DJ UVESH
+    
+    <button class="btncollapse ml-4" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars text-danger"></i>
+    </button></div>
+    <div class="collapse " id="navbarText">
+    <nav class="navbar navbar-expand-lg">
+       
+       
+          <ul class="navbar-nav mr-auto nav1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" >HOME</span></a>
+           
+              <a class="nav-link" href="#">ABOUT</a>
+            
+              <a class="nav-link" href="#">DISCOGRAPHY</a>
+           
+              <a class="nav-link" href="#">TOURS</a>
+           
+              <a class="nav-link" href="#">VIDEOS</a>     
+          
+              <a class="nav-link" href="#">PAGES</a>
+          
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        
+    </nav>
+    </div>
+    <section  >
+    <div class="header-text text-center">
+
+        <p class="text-center text-uppercase text-white" style="font-family: Arial, Helvetica, sans-serif; letter-spacing: 3px;">new single</p>
+        <h1 class="text-center text-white" style="font-family: 'Brush Script MT', cursive; font-size:100px">feel the heart beat</h1>
+        <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+        <a href="https://www.youtube.com/watch?v=xHy-Wo6Adak" id="videolink" class="button video1 play-video text-center">
+          Watch Videos
+         <i class="fa fa-play-circle"></i>
+        </a>
+
+
+    </div>
+    <script>
+     $('#videolink').magnificPopup({
+      type:'inline',
+      midClick:true
+     })
+    </script>
+    </section>
+
+</header><br><br><br><br>
+
+<div class="card">
+  <div class="card-header text-center">
+    <i class="fa fa-music mr-3" style="font-size: 25px;"></i><b style="font-size: 25px;">Remix Songs</b>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title ">1.YE JO TERI PAYALO KI (REMIX BY DJ UVESH)</h5>
+    <p class="card-text">
+      <audio controls loop>
+        <source src="music/uvesh1.mpeg" type="audio/mpeg">
+      </audio>
+    </p>
+    <a href="music/uvesh1.mpeg" class="btn btn-primary">Download File<i class="fa fa-download ml-2"></i></a><br><br>
+
+    <h5 class="card-title ">2.CAN X AE-DIL-MUSHKIL (REMIX BY DJ UVESH)</h5>
+    <p class="card-text">
+      <audio controls loop>
+        <source src="music/uvesh2.mpeg" type="audio/mpeg">
+      </audio>
+    </p>
+    <a href="music/uvesh2.mpeg" class="btn btn-primary">Download File<i class="fa fa-download ml-2"></i></a><br><br><br>
+
+    
+    <h5 class="card-title ">3.SAY MY NAME (REMIX BY DJ UVESH)</h5>
+    <p class="card-text">
+      <audio controls loop>
+        <source src="music/uvesh3.mpeg" type="audio/mpeg">
+      </audio>
+    </p>
+    <a href="music/uvesh3.mpeg" class="btn btn-primary">Download File<i class="fa fa-download ml-2"></i></a><br><br><br>
+
+    
+    <h5 class="card-title ">4.CRADLES X BHAYANAK AATMA (REMIX BY DJ UVESH)</h5>
+    <p class="card-text">
+      <audio controls loop>
+        <source src="music/uvesh4.mpeg" type="audio/mpeg">
+      </audio>
+    </p>
+    <a href="music/uvesh4.mpeg" class="btn btn-primary">Download File<i class="fa fa-download ml-2"></i></a><br><br><br>
+
+    
+    <h5 class="card-title ">5.PARTY SONG (REMIX BY DJ UVESH)</h5>
+    <p class="card-text">
+      <audio controls loop>
+        <source src="music/uvesh5.mpeg" type="audio/mpeg">
+      </audio>
+    </p>
+    <a href="music/uvesh5.mpeg" class="btn btn-primary">Download File<i class="fa fa-download ml-2"></i></a><br><br><br>
+
+  </div>
+</div>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> 
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/jquery.js"></Script>
+    <script src="js/bootstrap.min.js"></Script>
+    <script src="js/popper.js"></Script>
+    
+        <script>
+            $(document).ready(function(){
+             $(".section1 button").click(function(){
+                 
+               if($(this).find("i.fa").hasClass("fa-bars"))
+               {
+                $(this).find("i.fa").removeClass("fa-bars");
+                $(this).find("i.fa").addClass("fa-close");
+               }
+               else if($(this).find("i.fa").hasClass("fa-close"))
+               {
+                $(this).find("i.fa").removeClass("fa-close");
+                $(this).find("i.fa").addClass("fa-bars");
+               }
+          
+          });    
+          });
+          </script>
+</body>
+</html>
